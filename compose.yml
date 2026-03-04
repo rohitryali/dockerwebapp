@@ -2,12 +2,12 @@
 version: "3"
 services:
  devopsdb:
-   image: shaikmustafa/harikanew:dbimage
+   image: rohitryali9/myrepo:db
    ports:
      - "3306:3306"
 
  application:
-   image: shaikmustafa/harikanew:appimage
+   image: rohitryali9/myrepo:app
    deploy:
      replicas: 3
    ports:
